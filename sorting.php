@@ -30,7 +30,7 @@ function generate_random_array() {
     echo "<br/>";
     echo "The largest number = " . $largest_value;
 
-    $smallest_value = &$an_array[0];
+    $smallest_value = $an_array[0];
 
     // Loop to find the smallest number
     for ($index = 0; $index < $array_length; $index++) {
