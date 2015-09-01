@@ -17,31 +17,31 @@ function generate_random_array() {
         echo "Item [" . $index . "] = ". $an_array[$index] . "<br/>";
     }
 
-    $largest_value = $an_array[0];
+    $largest_number = $an_array[0];
 
     // Loop to find the largest number
     for ($index = 0; $index < $array_length; $index++) {
-        if ($largest_value < $an_array[$index]) {
-            $largest_value = $an_array[$index];
+        if ($largest_number < $an_array[$index]) {
+            $largest_number = $an_array[$index];
         }
 
     }
 
     echo "<br/>";
-    echo "The largest number = " . $largest_value;
+    echo "The largest number = " . $largest_number;
 
-    $smallest_value = $an_array[0];
+    $smallest_number = $an_array[0];
 
     // Loop to find the smallest number
     for ($index = 0; $index < $array_length; $index++) {
 
-        if ($smallest_value > $an_array[$index]) {
-            $smallest_value = $an_array[$index];
+        if ($smallest_number > $an_array[$index]) {
+            $smallest_number = $an_array[$index];
         }
     }
 
     echo "<br/>";
-    echo "The smallest number = " . $smallest_value;
+    echo "The smallest number = " . $smallest_number;
 
 
 }
